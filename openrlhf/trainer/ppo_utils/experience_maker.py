@@ -108,7 +108,7 @@ class Experience:
         )
 
     def __radd__(self, other):
-        if other == 0:
+        if other is None:
             return self
         return self.__add__(other)
 
